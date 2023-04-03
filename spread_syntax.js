@@ -18,7 +18,7 @@ console.log(copyReplace([1, 2, 100, 200, 6], 2, 4, [3, 4, 5]));
 let customerOrder = [];
 
 function recordOrders(time, ...birds) {
-    customerOrder = {time, birds};
+    customerOrder.push({time, birds});
 }
 
 recordOrders(new Date, "coffee", "yaourt", "pizza");
